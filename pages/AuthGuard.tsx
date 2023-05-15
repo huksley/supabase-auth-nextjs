@@ -32,8 +32,8 @@ export const AuthGuard = ({ children }: { children: React.ReactNode }) => {
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
-          height: '100vh',
-          width: '100vw'
+          height: 'calc(100vh - 4em)',
+          boxSizing: 'content-box'
         }}
       >
         <Auth
