@@ -51,7 +51,7 @@ const LoginPage: NextPage = () => {
       </p>
       {isLoading ? <h1>Loading...</h1> : <h1>Loaded!</h1>}
       <p>user:</p>
-      <pre>{JSON.stringify(session, null, 2)}</pre>
+      <pre>{JSON.stringify(session?.user, null, 2)}</pre>
       <p>client-side data fetching with RLS</p>
       <pre>{JSON.stringify(data, null, 2)}</pre>
     </>
